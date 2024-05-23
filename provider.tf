@@ -6,7 +6,7 @@ provider "aws" {
 # configure backend
 terraform {
   backend "s3" {
-    bucket         = "dhsoni-terraform"
+    bucket         = "raj-terraform"
     key            = "aws-eks.terraform.tfstate"
     region         = "us-east-2"
     dynamodb_table = "terraform-state-lock-dynamodb"
